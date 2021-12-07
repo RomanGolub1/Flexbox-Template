@@ -1,0 +1,26 @@
+@use "../presets/" as *;
+@use "../mixsins/" as *;
+
+.widget {
+  margin: 0 0 15px;
+  padding: 15px;
+
+  color: $color-light;
+  border-radius: 7px;
+
+  @include bg-color;
+
+  h3 {
+    margin-top: 5px;
+
+    @include block-header;
+  }
+
+  p {
+    line-height: 2em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
